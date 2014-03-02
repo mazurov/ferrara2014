@@ -1,0 +1,4 @@
+#!/bin/sh
+
+latexmk -jobname=mazurov-ferrara2013 -pdf --outdir=build -c main.tex
+./scripts/bootstrap

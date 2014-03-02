@@ -1,0 +1,4 @@
+#!/bin/sh
+
+latexmk -jobname=mazurov-ferrara2014 -pdf --outdir=build  main.tex
+#&& evince build/chib_note.pdf&

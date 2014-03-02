@@ -1,0 +1,1 @@
+Latex source for [my talk](https://speakerdeck.com/mazurov/ferrara-2013) at Ferrara University on 16 Dec 2013.

@@ -1,0 +1,94 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Warsaw}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}  % or try serif, structurebold, ...
+  %\setbeamertemplate{symbols}{}
+  %\setbeamertemplate{caption}[numbered]
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{footline}{%
+    \hfill\hspace{1cm}\insertframenumber{}/\inserttotalframenumber
+  }
+    \newenvironment{figure*}%
+    {\begin{figure}}
+    {\end{figure}}
+    \newenvironment{table*}%
+    {\begin{table}}
+    {\end{table}}    
+    \setbeamersize{text margin left=6mm, text margin right=2mm}
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{ifthen}
+\usepackage{xspace}
+
+
+% On writeLaTeX, these lines give you sharper preview images.
+% You might want to comment them out before you export, though.
+% \usepackage{pgfpages}
+
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %True for upright particle symbols
+\input{preamble}
+
+\input{title}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\input{content}
+\input{motivation}
+\input{previous}
+\input{formula}
+\input{data}
+\input{upsilon-sel}
+\input{upsilon-fit}
+\input{upsilon-yields}
+
+\input{chib-sel}
+\input{chib1s-fit}
+\input{chib1s-fit-params}
+\input{chib1s-m}
+\input{chib1s-yields}
+\input{chib2s-fit}
+\input{chib2s-fit-params}
+\input{chib2s-m}
+\input{chib2s-yields}
+\input{chib3s-fit}
+\input{chib3s-fit-params}
+\input{m3p-converted}
+\input{mc-fits}
+\input{mc-fits-figs}
+\input{mc-data}
+\input{mc-eff}
+\input{frac-1s}
+% \input{9.2-frac-2s}
+% \input{9.3-frac-3s}
+\input{syst-lambda-ups1s}
+\input{syst-lambda-ups2s}
+\input{syst-m1p-ups1s}
+\input{syst-m2p-ups2s}
+\input{syst-m3p-ups1s}
+\input{syst-pol-1}
+\input{syst-pol-2}
+\input{summary}
+
+
+% \begin{frame}[t]{Backup}
+% \end{frame}
+
+
+
+
+\end{document}
