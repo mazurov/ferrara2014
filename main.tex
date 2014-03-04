@@ -25,6 +25,16 @@
     \setbeamersize{text margin left=6mm, text margin right=2mm}
 } 
 
+% \makeatletter
+% \newenvironment{myitemize}{%
+%    \setlength{\topsep}{0pt}
+%    \setlength{\partopsep}{0pt}
+%    \renewcommand*{\@listi}{\leftmargin\leftmargini \parsep\z@ \topsep\z@ \itemsep\z@}
+%    \let\@listI\@listi
+%    \itemize
+% }{\enditemize}
+% \makeatother 
+
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{ifthen}
@@ -52,9 +62,11 @@
 \input{lhc}
 \input{lhcb}
 \input{lhcb-sub}
+\input{lhcb-oper}
 \input{section-chib}
 \input{motivation}
 \input{spectrum}
+\input{theory}
 \input{previous}
 \input{formula}
 \input{content-chib}
@@ -80,6 +92,7 @@
 \input{mc-data}
 \input{mc-eff}
 \input{syst}
+\input{syst-lambda-ups1s}
 \input{syst-pol-1}
 \input{syst-pol-2}
 \input{syst-summary}
